@@ -1,0 +1,114 @@
+.form {
+    width: 100%;
+}
+
+.form h2 {
+    text-align: center;
+    color: hsl(212, 24%, 26%);
+}
+
+.form-control {
+    padding: 0.6rem;
+}
+
+.form-control label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+
+.form-control input {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid hsl(211, 10%, 45%);
+    padding: 0.5rem 0.5rem;
+    outline: none;
+    font-weight: bold;
+}
+
+.form-control div {
+    position: relative;
+}
+
+.form-control input[type="password"] {
+    padding-right: 3rem;
+}
+
+.toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    font-weight: bold;
+    margin-right: 0.7rem;
+    margin-top: 0.2rem;
+    color: hsl(238, 40%, 52%);
+}
+
+.link {
+    text-decoration: none;
+    color: hsl(212, 24%, 26%);
+    text-decoration: underline;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0.7rem;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    border-radius: 16px;
+    background-color: hsl(238, 40%, 52%);
+    color: hsl(228, 33%, 97%);
+    border: none;
+    padding: 0.8rem;
+    font-weight: bold;
+    justify-items: center;
+    margin: 1rem auto;
+    transition: 0.3s;
+    position: relative;
+}
+
+.button:hover {
+    transform: translateY(10px);
+    width: 100%;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+.spinner {
+    border-style: solid;
+    border-width: 2px;
+    border-color: hsl(228, 33%, 97%) transparent hsl(228, 33%, 97%) transparent;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: end;
+    padding: 0.5rem;
+    margin-left: 1rem;
+    animation-name: spinner;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spinner {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.div {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.div a {
+    text-decoration: none;
+    color: hsl(212, 24%, 26%);
+    text-decoration: underline;
+}
